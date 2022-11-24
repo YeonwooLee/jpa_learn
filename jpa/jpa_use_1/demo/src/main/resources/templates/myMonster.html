@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <h1>당신의 몬스터</h1>
+    <p th:text="'종족: '+${monster.tribe}">종족: 용</p>
+    <p th:text="'이름: '+${monster.name}">이름: 용</p>
+    <p th:text="'공격력: '+${monster.attack}">공격력: 3</p>
+    <p th:text="'방어력: '+${monster.defense}">방어력: 7</p>
+    <p th:text="${monster.description}">몬스터 설명</p>
+
+
+</body>
+</html>
